@@ -8,6 +8,12 @@ app.set('view engine', 'ejs');
 app.get('/', function (request, response){
     response.render('pages/index');
 });
+app.get('/sobre', function (request, response){
+    response.render('pages/about');
+});
+app.get('/contato', function (request, response){
+    response.render('pages/contact');
+});
 
 app.listen(8080);
 console.log('Server is Running');
